@@ -1,8 +1,8 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ActorComponent} from './actor/actor.component';
-import {MovieComponent} from './movie/movie.component';
 import {HomeComponent} from './home/home.component';
+import {MovieListComponent} from './movie-list/movie-list.component' ;
+import {ActorListComponent} from './actor-list/actor-list.component' ;
 
 
 
@@ -12,12 +12,12 @@ const appRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'actor',
-        component: ActorComponent
+        path: 'actorlist',
+        component: ActorListComponent
     },
     {
-        path: 'movie',
-        component: MovieComponent
+        path: 'movielist',
+        component: MovieListComponent
     }
 
 ];

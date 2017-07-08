@@ -9,6 +9,8 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import {routing} from './app.routing';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import {MoviesService} from './services/movie.service';
+import {ActorService} from './services/actor.service';
 
 
 @NgModule({
@@ -26,7 +28,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     routing
   ],
-  providers: [],
+  providers: [MoviesService , ActorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
