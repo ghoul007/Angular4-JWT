@@ -12,7 +12,8 @@ export class ActorListComponent implements OnInit {
   actors: Actor[];
   constructor(private actorService: ActorService) { }
   getActors(): void {
-    this.actorService.getActors().then(actors => this.actors = actors);
+    // this.actorService.getActors().then(actors => this.actors = actors);
+    this.actorService.getActorsRest().subscribe(actors => this.actors = actors);
   }
   ngOnInit() {
     this.getActors();

@@ -12,6 +12,7 @@ import {MovieListComponent} from "./modules/movie/components/movie-list/movie-li
 import {ActorComponent} from "./modules/actor/components/actor/actor.component";
 import {ActorListComponent} from "./modules/actor/components/actor-list/actor-list.component";
 import {ActorService} from "./modules/actor/services/actor.service";
+import {HttpModule} from "@angular/http";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {ActorService} from "./modules/actor/services/actor.service";
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [MoviesService , ActorService],
   bootstrap: [AppComponent]
