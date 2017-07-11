@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { MoviesService } from '../services/movie.service';
-import { Movie } from '../class/movie';
+import {MoviesService} from "../../services/movie.service";
+import {Movie} from "../../classes/movie";
+
 
 
 @Component({
   selector: 'app-movie-list',
-  templateUrl: './movie-list.component.html',
-  styleUrls: ['./movie-list.component.css']
+  templateUrl: '../../views/movie-list.component.html',
+  styleUrls: ['../../views/movie-list.component.css']
 })
 
 

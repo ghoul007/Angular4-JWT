@@ -1,8 +1,9 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
-import {MovieListComponent} from './movie-list/movie-list.component' ;
-import {ActorListComponent} from './actor-list/actor-list.component' ;
+
+import {MovieListComponent} from "./modules/movie/components/movie-list/movie-list.component";
+import {ActorListComponent} from "./modules/actor/components/actor-list/actor-list.component";
 
 
 

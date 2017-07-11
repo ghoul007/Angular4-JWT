@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { MOVIES } from '../class/movie_data';
-import { Movie } from '../class/movie';
+import {MOVIES} from "../classes/movie_data";
+import {Movie} from "../classes/movie";
+
 
 @Injectable()
 export class MoviesService {

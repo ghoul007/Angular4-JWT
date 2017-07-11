@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { ACTORS } from '../class/actor_data';
-import { Actor } from '../class/actor';
+import {ACTORS} from "../classes/actor_data";
+import {Actor} from "../classes/actor";
+
 
 @Injectable()
 export class ActorService {
