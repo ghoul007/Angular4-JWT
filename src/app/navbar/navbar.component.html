@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" *ngIf="isLoggin()" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -15,6 +15,11 @@
         <li [routerLinkActive]="['active']"><a    [routerLink]='["/movielist"]'>Movie</a></li>
         <li [routerLinkActive]="['active']"><a   [routerLink]='["/actorlist"]'>Actor</a></li>
       </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li  [routerLinkActive]="['active']"><a (click)="logout()">Logout</a></li>
+      </ul>
+
     </div><!--/.nav-collapse -->
   </div>
 </nav>
